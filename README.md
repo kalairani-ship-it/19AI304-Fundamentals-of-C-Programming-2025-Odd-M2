@@ -56,6 +56,10 @@
 ### Step 11:
   Stop
 # Program:
+  #include <stdio.h>
+int main() { float math, science, english, average; printf("Enter marks for Math, Science, and English: "); scanf("%f %f %f", &math, &science, &english); average = (math + science + english) / 3.0; printf("Average marks: %.2f\n", average); if (average >= 90.0f) { printf("Grade: A\n"); } else if (average >= 75.0f && average < 90.0f) { printf("Grade: B\n"); } else if (average >= 50.0f && average < 75.0f) { printf("Grade: C\n"); } else { printf("Grade: F\n"); }
+return 0;
+}
 # Output:
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -88,6 +92,8 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 
 # Program:
+  #include <stdio.h>
+int main() { int num = 15; int i; printf("Multiplication table of %d:\n", num); for (i = 1; i <= 10; i++) { printf("%d x %d = %d\n", num, i, num * i); } return 0; }
 # Output:
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -131,6 +137,14 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7:   
   Stop
 # Program:
+  #include <stdio.h> #include <stdbool.h>
+int main() { int num, i; bool isPrime = true; printf("Enter a number: "); scanf("%d", &num); if (num <= 1) { isPrime = false; } else { for (i = 2; i * i <= num; i++) { if (num % i == 0) { isPrime = false; break; } } }
+if (isPrime)
+    printf("%d is a prime number.\n", num);
+else
+    printf("%d is not a prime number.\n", num);
+return 0;
+}
 # Output:
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -179,6 +193,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+  #include <stdio.h> int main() { int N,row,col; scanf("%d",&N); for(row=1;row<=N;row++){ for(col=1;col<=N;col++){ if(row==1) printf("%d",col); else if(col==1) printf("%d",row); else if(row==N) printf("%d",N-col+1); else if(col==N) printf("%d",N-row+1); else printf(" "); } printf("\n"); } return 0;}
 # Output:
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -232,6 +247,13 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+### Program:
+  #include <stdio.h>
+int main() { int i, j; int n = 7; printf("0\n"); for (i = 1; i <= n; i++) { int start = n - i + 1; for (j = start; j <= n; j++) { printf("%d ", j); } printf("0 "); for (j = n; j >= start; j--) { printf("%d ", j); }
+    printf("\n");
+}
+return 0;
+}
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
